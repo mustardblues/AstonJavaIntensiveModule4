@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: user-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/userservicedb
+    username: mustardblues
+    password: mustardblues
+    driver-class-name: org.postgresql.Driver
+
+logging:
+  level:
+    edu.aston.userservice: INFO
+  file:
+    name: logs/application.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} %-5level %-50logger - %msg%n"
+  register-shutdown-hook: true
